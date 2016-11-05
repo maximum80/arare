@@ -21,7 +21,7 @@ if($type != "text"){
 if ($text == 'はい') {
   $response_format_text = [
     "type" => "template",
-    "altText" => "こちらの〇〇はいかがですか？",
+    "altText" => "お散歩行くの？",
     "template" => [
       "type" => "buttons",
       "thumbnailImageUrl" => "https://" . $_SERVER['SERVER_NAME'] . "/img1.jpg",
@@ -132,10 +132,10 @@ if ($text == 'はい') {
 } else {
   $response_format_text = [
     "type" => "template",
-    "altText" => "こんにちわ 何かご用ですか？（はい／いいえ）",
+    "altText" => "ワンワン！！（何か用？）（はい／いいえ）",
     "template" => [
         "type" => "confirm",
-        "text" => "こんにちわ 何かご用ですか？",
+        "text" => "ワンワン！！（何か用？）",
         "actions" => [
             [
               "type" => "message",
